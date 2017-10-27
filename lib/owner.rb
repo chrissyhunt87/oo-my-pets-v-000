@@ -47,7 +47,7 @@ class Owner
   end
 
   def sell_pets
-    @@pets.each do |key, array|
+    @pets.each do |key, array|
       key.each { |pet| pet.mood = "nervous" }
     end
     self.class.reset_all
