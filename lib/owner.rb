@@ -20,4 +20,9 @@ class Owner
   def self.reset_all
     @@all.clear
   end
+
+  def self.count
+    counter = 0
+    @@all.each do {|o| counter += 1}
+    counter
 end
