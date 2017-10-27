@@ -15,7 +15,7 @@ class Owner
     @@all << self
   end
 
-  def species
+  def say_species
     puts "I am a #{@species}."
   end
 
