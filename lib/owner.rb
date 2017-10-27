@@ -50,7 +50,7 @@ class Owner
     @pets.each do |key, array|
       key.each { |pet| pet.mood = "nervous" }
     end
-    self.class.reset_all
+    @pets = []
   end
 
   def self.all
