@@ -22,7 +22,5 @@ class Owner
   end
 
   def self.count
-    counter = 0
-    @@all.each do {|o| o; counter += 1}
-    counter
+    @@all.count
 end
