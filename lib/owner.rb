@@ -23,6 +23,6 @@ class Owner
 
   def self.count
     counter = 0
-    @@all.each do {|o| counter += 1}
+    @@all.each do {|o| o; counter += 1}
     counter
 end
